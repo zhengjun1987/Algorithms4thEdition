@@ -11,12 +11,12 @@ import java.util.Date;
  */
 public class MyUtils {
     public static String getCurrentTime() {
-        return new SimpleDateFormat("yyyy-MM-dd HH:mm:ss:SSS").format(new Date())+"  ";
+        return new SimpleDateFormat("yyyy-MM-dd HH:mm:ss:SSS").format(new Date()) + "  ";
     }
 
-    public static <T> T requireNotNull(T t){
+    public static <T> T requireNotNull(T t) {
         if (t == null) {
-            throw new NullPointerException(t.getClass().getSimpleName()+"实例为空！");
+            throw new NullPointerException(t.getClass().getSimpleName() + "实例为空！");
         }
         return t;
     }
