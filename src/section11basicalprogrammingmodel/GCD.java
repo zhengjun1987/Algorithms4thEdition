@@ -56,7 +56,7 @@ public class GCD {
 //        2017-12-29 21:42:13:095  [1, 11, 55, 165, 330, 462, 462, 330, 165, 55, 11, 1]
 //        2017-12-29 21:42:13:466  [1, 12, 66, 220, 495, 792, 924, 792, 495, 220, 66, 12, 1]
 
-    private static int gcd(int p, int q) {
+    static int gcd(int p, int q) {
         System.out.println(MyUtils.getCurrentTime() + "GCD.gcd  " + "p = [" + p + "], q = [" + q + "]");
         if (q == 0) {
             return p;
